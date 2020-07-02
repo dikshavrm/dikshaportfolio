@@ -1,0 +1,73 @@
+<!-- Section1 -->
+
+<div class="container-fluid c1" id="bg">
+    <img src="assets/a1.jpg" class="img-fluid responsive c2">
+    <div class="c3"></div>
+</div>
+
+
+<!-- Section2 -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10 mt-5">
+            <div class="container card mt-4 mb-5">
+                <div class="row">
+                    <div class="col-md-6 p-5">
+                        <img src="assets/undraw.png" class="img-fluid responsive c4"> 
+                    </div>
+                   
+                    <div class="col-md-6">
+                        
+                <h3 class="text-center mt-2"><b>Get in Touch!</b></h3>
+                
+                <form class="example-form mt-5"  [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Your Name</mat-label>
+                      <input matInput type="text" name="name" formControlName="name" autocomplete="off" placeholder="Ex. Diksha">
+                    </mat-form-field><br>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Your Email</mat-label>
+                        <input matInput type="email" name="email" formControlName="email" autocomplete="off" placeholder="Ex. diksha@example.com">
+                      </mat-form-field>
+
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Phone No.</mat-label>
+                        <input matInput type="number" name="phone" formControlName="phone" autocomplete="off" placeholder="Ex. 9876543210">
+                      </mat-form-field>
+
+                      <mat-form-field  class="example-full-width">
+                     
+                    <mat-select required formControlName="message_subject" placeholder="" name="message_subject">
+                      <mat-option value="Portfolio Design">Portfolio Design</mat-option>
+                      <mat-option value="Website Design">Website Design</mat-option>
+                      <mat-option value="Blog Design">Blog Design</mat-option>
+                      <mat-option value="optHire for Freelanceion">Hire for Freelance</mat-option>
+                      <mat-option value="Hire for Job">Hire for Job</mat-option>
+                    </mat-select>
+                    <mat-label>Message Subject</mat-label>
+                  </mat-form-field>
+
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Message</mat-label>
+                    <input matInput type="text" name="message" formControlName="message" autocomplete="off" placeholder="Ex. Hello">
+                  </mat-form-field>
+                  
+                  <button mat-raised-button color="primary" class="mb-2"  type="submit" class="c5" [disabled]="angForm.invalid">Submit Form</button>
+                  <!-- <button mat-raised-button color="accent" class="mt-5" type="submit" [disabled]="angForm.invalid">Register</button> -->
+
+
+                    
+                  </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

@@ -1,0 +1,276 @@
+/* Section1 */
+
+.sc1{
+  position: relative;
+  height:60vh;
+
+}
+
+.sc2{
+  width:60%;
+  border-color: white;
+}
+
+.sc3{
+ background-color: black;
+ opacity: 0.8;
+ width: 100%;
+ height:60vh;
+}
+
+@media screen and (min-width: 601px) {
+  .sc10 {
+    font-size:60px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ .sc10 {
+  font-size:26px;  }
+}
+
+@media screen and (min-width: 601px) {
+  .sc11{
+    font-size:45px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ .sc11 {
+  font-size:22px;  }
+}
+
+/* Section2 */
+.sc4{
+  font-weight: bold;
+}
+/* Button Hover */
+.outer {
+  margin: 50px;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 3px;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px; 
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;  
+}
+
+/* Responsive font */
+
+@media screen and (min-width: 601px) {
+  .s1 {
+    font-size:21px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ .s1 {
+  font-size:18px;  }
+}
+
+/* Section3 */
+.sc5{
+  background-color: #E9C9BA;
+}
+
+@media screen and (min-width: 601px) {
+  .s2 {
+    font-size:35px;
+    font-weight: bold;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ .s2 {
+  font-size:25px; 
+  font-weight: bold;
+
+}
+}
+
+.sc6{
+  font-size:15px;
+}
+.sc7{
+  background-color:  teal;
+  color: white;
+}
+
+/* Section4 */
+.sc8{
+  background-color:#A7ECE1;
+  border-color: #A7ECE1;
+}
+
+/* Text */
+
+@media screen and (max-width: 600px) {
+  .s4 {
+   font-size:12px;
+   padding-left:90px;
+  }
+ }
+ 
+ @media screen and (min-width: 601px) {
+   .s4 {
+     font-size:20px;
+     padding-left:300px;
+     padding-right: 50px;
+     line-height:30px;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+  .s5 {
+   font-size:20px;
+   padding-left: 90px;
+  }
+ }
+ 
+ @media screen and (min-width: 601px) {
+   .s5 {
+     font-size:30px;
+     font-weight: bold;
+     padding-left:300px;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+  .s6 {
+   font-size:10px;
+   margin-left:90px;
+  }
+ }
+ 
+ @media screen and (min-width: 601px) {
+   .s6 {
+     font-size:15px;
+     margin-left:300px;
+   }
+ }
+
+
+ /*Section5  */
+
+.sc9{
+  width:100px;
+}
+
+.carousel-item {
+    height: 60vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .c1{
+    height:300px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 50px 10px 50px; 
+    box-shadow: 0 15px 10px #777;
+
+    /* box-shadow: 5px 10px #888888; */
+  }
+
+  .circle-icon1 {
+    background-image: linear-gradient(to bottom,rgb(22,91,145),rgb(75,159,188));
+    padding:20px;
+    border-radius: 50%;
+    width:100px;
+    color: white;
+    margin-top: -35px;
+}
+
+.circle-icon2 {
+   background-image: linear-gradient(to bottom,yellow,lightgrey);
+    padding:20px;
+    border-radius: 50%;
+    width:100px;
+    margin-top: -35px;
+    color: white;
+}
+
+.circle-icon3 {
+    background:palevioletred;
+    padding:20px;
+    border-radius: 50%;
+    width:100px;
+    margin-top: -35px;
+    color: white;
+
+}
+
+img {
+  margin: 50px 0px 50px 0px;
+  width:70%;
+  height: 500px;
+}
+
+.image-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .image-stack__item--top {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      position: relative;
+      z-index: 1;
+  }
+
+  .image-stack__item--bottom {
+      float: right;
+      width: 75%;
+  }
+
+@supports (display: grid) {
+  .image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .image-stack__item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .image-stack__item--top {
+    grid-row: 1;
+    grid-column: 1 / span 8;
+    width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+<!-- <mat-toolbar color="accent">My App</mat-toolbar> -->
+<!-- Header Part -->
+
+<!-- <nav class="navbar navbar-expand-lg " style="padding: 0px;color: black;position: absolute;;" >
+ 
+  <img class="nav-link navbar-brand rounded-circle" src="assets/logomn.png" style="height: 50px; width: 80px;">
+  <button class="navbar-toggler" type="button"
+  (click)="toggleNavbar()">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+
+<div class="collapse navbar-collapse"
+     [ngClass]="{ 'show': navbarOpen }" style="padding: 0px;">
+     
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a routerLink="home" routerLinkActive="active" class="nav-link" style="color: black;">Home</a>
+    </li>
+  
+    <li class="nav-item">
+      <a routerLink="./aboutus" routerLinkActive="active" class="nav-link">About Us</a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="./register" routerLinkActive="active" class="nav-link">Register</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="./login" routerLinkActive="active" class="nav-link">Login</a>
+    </li>
+    
+    <li class="nav-item mr-3">
+      <a class="nav-link" routerLink="cart" routerLinkActive="active">Cart</a>
+    </li>
+
+   
+    
+  </ul>
+  
+</div>
+</nav> -->
+<!-- 
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: absolute;">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+
+
+
+<app-header style="z-index: 101;"></app-header>
+
+
+<div>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+</div>
+
