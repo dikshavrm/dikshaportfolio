@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Web Template
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="web.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	 
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	 
+	 <style>
+	 .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#a{
+	font-size:37px;
+	color:white;
+}
+
+#b{
+	font-size:12px;
+	color:white;
+}
+
+.c{
+	opacity:0.6;
+}
+
+#d{
+	background-color:white;
+	position:relative;
+	height:370px;
+	bottom: 20px;
+  	text-align: left;
+  	font-size:large;
+  	padding:10px 10px 10px 10px;
+  	}
+
+ #e{
+ 	position:relative;
+ 	text-align: center;
+ 	}
+
+ #f{
+ 	margin-top: 20px;
+ }
+
+.g{
+	position: relative;
+	width:100%;
+}
+
+.m{
+	position: relative;
+	width:100%;
+}
+
+.h{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 60px;
+  left: 25%;
+  background-color:white;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width:50%;
+  height:370px;
+}
+
+.i{
+	margin:20px 20px 20px 20px;
+}
+
+#j{
+	position: relative;
+ 	font-size: 1vw;
+ }
+
+.colors{
+  			border: 1px #F3F3F3 solid;
+  			position: relative;
+  			top:100px;
+  			margin-bottom:40px;
+  			height: 350px;
+  			text-align: center;
+  			font-size:large;
+  			width:100%;
+  			}
+
+.k{
+	padding-left:13%;
+	padding-right:13%;
+	margin-bottom: 250px;
+}
+
+
+.text {
+  background-color:white;
+  border:1px #F3F3F3 solid;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width:85%;
+  height:220px;
+  font-family:Monotype Corsiva;
+}
+
+
+/*image position*/
+
+.deg1 {
+transform: rotate(270deg) translate(6em) rotate(-270deg);
+} /* 1 */
+ .deg2 {
+   transform: translate(6em);
+ } /* 2 */
+ .deg3 {
+   transform: rotate(45deg) translate(3em) rotate(-45deg);
+ } /* 3 */
+ .deg4 {
+   transform: rotate(135deg) translate(4em) rotate(-135deg);
+ } /* 4 */
+ .deg5 {
+   transform: translate(-3em);
+ } /* 5 */
+ .deg6 {
+   transform: rotate(210deg) translate(8em) rotate(-215deg);
+ } 
+ /* 6 */
+.circle-container {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+}
+
+.circle-container a {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+  height: 1vw;
+}
+
+
+.center img {}
+
+.deg1 img {
+  position: relative;
+  top: 100px;
+}
+
+.deg2 img {
+  position: relative;
+  bottom: 100px;
+}
+
+.deg3 img {
+  position: relative;
+  top: 50px;
+  left: 85px;
+}
+
+.deg4 img {
+  position: relative;
+  top: 50px;
+  right: 85px;
+}
+
+.deg5 img {
+  position: relative;
+  bottom: 50px;
+  right: 85px;
+}
+
+.deg6 img {
+  position: relative;
+  bottom: 50px;
+  left: 85px;
+}
+
+/*Footer*/
+
+.col
+{
+background-color:#1B2F31;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.colo{
+	color: grey;
+	font-size: 13px;
+}
+
+.tab{
+	border-collapse: collapse;
+}
+
+.colr
+{
+background-color:black;
+width:100%;
+height:40px;
+text-align: center;
+font-size:12px;
+padding-top:10px;
+}
+
+.he1{
+	margin-right:500px;
+}
+
+.colos{
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.a2{
+  height: 1.5em;
+  border-bottom:1px grey solid;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.text-block1 {
+  position: absolute;
+  bottom: 100px;
+  background-color:white;
+  color: black;
+  padding: 15px 15px 15px 15px;
+  width:70%;
+  height:350px;
+}
+
+	 </style>
+</head>
+<body>
+
+	<!-- <div class="container-fluid">
+		 -->
+			    
+			 <!-- <div class="row">
+			    <div class="top-left ml-3">
+			    	<i class="fa fa-map-marker text-danger" aria-hidden="true"><span style="color:black; font-size:30px;">Reality<sub><i>Properties</i></sub></span></i>
+			    </div> -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark"  style="z-index: 100;">
+  <a class="navbar-brand" href="#" style="color: white;font-size:25px;"><img src="pic/ab.jpg" height="30px" width="30px" class="rounded-circle"></a>
+          <a class="nav-link" style="color: white;">Home</a>
+
+  
+</nav>
+
+			 <div style="z-index: 1000;">
+
+			<img src="pic/b.jpg" height="500px" width="100%" class="c">
+			 </div>
+			 
+			 	<div class="row centered">
+			 	
+			 		<div class="container">
+			 			<div class="row">
+			 			  	<div class="col-md-6">
+			 			  		<h3 style="color: black;margin-top: 100px">We're the Next Generation of Real Estate Agents</p>
+			 			  		<p id="b"  style="color: black;">We are specialized in providing these services for the Buying, Selling, Leasing and Renting.</h3>
+			 			  		<a href="#">DOWNLOAD TEMPLETE</a>
+			 			  	</div>
+			 			  	<div class="col-md-6 text-muted" id="d" style="margin-top:100px"><h5 id="e">Quick Search</h5>
+
+			 			  			<div class="dropdown">
+									  <button type="button" class="btn btn-secondary btn-block dropdown-toggle" data-toggle="dropdown"  style="font-size: 1.2vw;">
+									    Buy/Rent/Sell
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Buy</a>
+									    <a class="dropdown-item" href="#">Rent</a>
+									    <a class="dropdown-item" href="#">Sell</a>
+									  </div>
+									</div>
+
+									<div class="dropdown">
+									  <button type="button" class="btn btn-secondary btn-block dropdown-toggle" id="f" data-toggle="dropdown"  style="font-size: 1.2vw;">
+									    Property Type
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Buy</a>
+									    <a class="dropdown-item" href="#">Rent</a>
+									    <a class="dropdown-item" href="#">Sell</a>
+									  </div>
+									</div>
+
+									<div class="dropdown">
+									  <button type="button" class="btn btn-secondary btn-block dropdown-toggle" id="f" data-toggle="dropdown"  style="font-size: 1.2vw;">
+									    States
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">UP</a>
+									    <a class="dropdown-item" href="#">MP</a>
+									    <a class="dropdown-item" href="#">Maharashtra</a>
+									  </div>
+									</div>
+									
+									<table>
+										<tr>
+											<td>
+
+									<div class="dropdown">
+									  <button type="button" class="btn btn-secondary btn-block dropdown-toggle m" id="f" data-toggle="dropdown"  style="font-size: 1.2vw;">
+									    Price From
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Buy</a>
+									    <a class="dropdown-item" href="#">Rent</a>
+									    <a class="dropdown-item" href="#">Sell</a>
+									  </div>
+									</div>
+								</td>
+								<td>
+
+									<div class="dropdown">
+									  <button type="button" class="btn btn-secondary btn-block dropdown-toggle g" id="f" data-toggle="dropdown"  style="font-size: 1.2vw;">
+									    Price To
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Buy</a>
+									    <a class="dropdown-item" href="#">Rent</a>
+									    <a class="dropdown-item" href="#">Sell</a>
+									  </div>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+
+									<div class="text-center">
+									  <button type="button" class="btn btn-danger dropdown-toggle" id="f"  style="font-size: 1.2vw;">
+									    Find Property
+									  </button>
+									</div>
+</div>
+			 			  	</div>
+			 			</div>
+			 		
+			 	</div>		 
+	</div>
+
+
+	<div class="container h">
+		<div class="row">
+			
+			<div class="col-md-4">
+					<i class="fa fa-home fa-4x" aria-hidden="true"></i>
+					<h5>I Am Thinking To <b>Buying</b></h5>
+				<div id="f">
+					<a href="#">VIEW PROPERTIES</a>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+					<i class="fa fa-home fa-4x" aria-hidden="true"></i>
+					<h5>I Am Thinking To <b>Selling</b></h5>
+				<div id="f">
+					<a href="#">VIEW PROPERTIES</a>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+					<i class="fa fa-home fa-4x" aria-hidden="true"></i>
+					<h5>I Am Thinking To <b>Renting</b></h5>
+				<div id="f">
+					<a href="#">VIEW PROPERTIES</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		<img src="pic/d.jpg" height="500px" width="100%">
+		 
+		<div class="row">
+			<div class="col-md-12">
+				<div class="text-block">
+				<div class="container" id="e">
+				  
+					 <div class="row">
+					  	<div class="col-md-12">
+					    <h4 align="center">Who We Are</h4>
+					    <p style="font-size: 1.2vw;">Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.Different types of housing tenure can be used for the same physical type. </p>
+						</div>
+					 </div>
+
+				   
+				    <div class="row" style="font-size: 1vw;">
+				    	<div class="col-md-4 text-muted">
+								<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+								<h5 style="font-size: 1.5vw;"><b>Strategic Growth</b></h5>
+				    	</div>
+				    	
+				    	<div class="col-md-4 text-muted">
+								<i class="fa fa-home fa-2x" aria-hidden="true"></i><br>
+								<h5 style="font-size: 1.5vw;"><b>Strategic Growth</b></h5>
+				    	</div>
+				    	
+				    	<div class="col-md-4 text-muted">
+								<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+								<h5 style="font-size: 1.5vw;"><b>Strategic Growth</b></h5>
+				    	</div>
+				    </div>
+
+				  	<div class="row">
+				  		<div class="col-md-12">
+				  			<div class="text-center">
+				  				<button type="button" class="btn btn-danger" id="j">Know More Us</button>
+				  			</div>
+				  		</div>
+					</div>
+
+				</div>
+
+			</div> 
+			
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class="container">
+		<div class="row k">
+			<div class="col-md-4">
+				<div class="colors text-muted">2952 Heershel Hollow<br><i class="fa fa-map-marker" aria-hidden="true">New York</i><br>
+					<img src="pic/e.jpg" height="150px" width="100%"><br>
+					<h4 style="color:#EE226C ">$45600</h4>
+					<table>
+						<tr>
+							<td><i class="fa fa-bed" aria-hidden="true"><br>2 Bedroom</i></td>
+							<td><i class="fa fa-bath" aria-hidden="true"><br>1 Bathroom</i></td>
+							<td><i class="fa fa-car" aria-hidden="true"><br>1 Parking</i></td>
+						</tr>
+					</table><br>
+					<button type="button" class="btn btn-info btn-block">
+									    VIEW PROPERTY
+									  </button>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="colors text-muted">2952 Heershel Hollow<br><i class="fa fa-map-marker" aria-hidden="true">New York</i><br><img src="pic/g.jpg" height="150px" width="100%"><br>
+					<h4 style="color:#EE226C ">$45600</h4>
+					<table>
+						<tr>
+							<td><i class="fa fa-bed" aria-hidden="true"><br>2 Bedroom</i></td>
+							<td><i class="fa fa-bath" aria-hidden="true"><br>1 Bathroom</i></td>
+							<td><i class="fa fa-car" aria-hidden="true"><br>1 Parking</i></td>
+						</tr>
+					</table>
+					<br>
+					<button type="button" class="btn btn-info btn-block">
+									    VIEW PROPERTY
+									  </button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="colors text-muted">2952 Heershel Hollow<br><i class="fa fa-map-marker" aria-hidden="true">New York</i><br><img src="pic/e.jpg" height="150px" width="100%"><br>
+					<h4 style="color:#EE226C ">$45600</h4>
+
+					<table>
+						<tr>
+							<td><i class="fa fa-bed" aria-hidden="true"><br>2 Bedroom</i></td>
+							<td><i class="fa fa-bath" aria-hidden="true"><br>1 Bathroom</i></td>
+							<td><i class="fa fa-car" aria-hidden="true"><br>1 Parking</i></td>
+						</tr>
+					</table>
+					<br>
+					<button type="button" class="btn btn-info btn-block">
+									    VIEW PROPERTY
+									  </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6">
+					<h4>What Our Customers Says</h4><br>
+					<div class="text text-muted">Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.<br><span style="color:black"> -Zachary Martin</span>(HOME BUYER)</div><br><br>
+					<h6><a href="#">READ ALL REVIEW</a></h6>
+				</div>
+
+				<div class="col-md-6">
+					 <div class='circle-container'>
+				    	<a href='#' class='center'><img src='pic/r5.jpg' class="rounded-circle img-responsive" height="100x" width="100px"%></a>
+				    	<a href='#' class='deg2'><img src='pic/r1.jpg' class="rounded-circle img-responsive" height="100x" width="100px"%></a>
+				    	<a href='#' class='deg3'><img src='pic/r2.jpg' class="rounded-circle img-responsive" height="100x" width="100px"%></a>
+				    	<a href='#' class='deg4'><img src='pic/r3.jpg' class="rounded-circle img-responsive" height="100x" width="100px"%></a>
+				    	<a href='#' class='deg5'><img src='pic/r4.jpg'class="rounded-circle img-responsive"  height="100x" width="100px"%></a>
+				    	<a href='#' class='deg6'><img src='pic/doub.png'class="rounded-circle img-responsive"  height="100x" width="100px"%></a>
+				     </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container k">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 align="center">A Collection of News and Insights</h3>		
+			</div>
+		</div>
+
+		  <div class="row">
+			
+			<div class="col-md-3">
+				<div class="colors">
+				<table>
+					<tr><img src="pic/a.jpg" width="100%" height="200px"></tr>
+					<tr><h6 class="text-danger">WEBSITES TEMPLETES</h6></tr><br>
+					<tr><h6>Real Estate Website Templete</h6></tr><br>
+					<tr><div class="text-muted"><small>23 March,2000 | By Admin</small></div></tr>
+				</table>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="colors">
+				<table>
+					<tr><img src="pic/a.jpg" width="100%" height="200px"></tr>
+					<tr><h6 class="text-danger">WEBSITES TEMPLETES</h6></tr><br>
+					<tr><h6>Real Estate Website Templete</h6></tr><br>
+					<tr><div class="text-muted"><small>23 March,2000 | By Admin</small></div></tr>
+				</table>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="colors">
+				<table>
+					<tr><img src="pic/a.jpg" width="100%" height="200px"></tr>
+					<tr><h6 class="text-danger">WEBSITES TEMPLETES</h6></tr><br>
+					<tr><h6>Real Estate Website Templete</h6></tr><br>
+					<tr><div class="text-muted"><small>23 March,2000 | By Admin</small></div></tr>
+				</table>
+			 	</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="colors">
+				<table>
+					<tr><img src="pic/a.jpg" width="100%" height="200px"></tr>
+					<tr><h6 class="text-danger">WEBSITES TEMPLETES</h6></tr><br>
+					<tr><h6>Real Estate Website Templete</h6></tr><br>
+					<tr><div class="text-muted"><small>23 March,2000 | By Admin</small></div></tr>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="pic/h.jpg" height="530px" width="100%">
+
+				<div class="container">
+					<div class="row">
+
+					<div class="col-md-6">
+						<div class="text-block1">
+							<h4>Friendly, Dedicated Support Every Step of The Way</h4><br>
+							<p  class="text-muted" style="font-size: 1vw;">Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure.</p>
+							<h6>+91 987654321 / info@reality.com</h6><br>
+							<div class="text-center"><button class="btn btn-danger" style="font-size: 1vw;">CONTACT US</button></div>
+						</div>
+					</div>
+
+					<div class="col-md-6"></div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--FOOTEER-->
+
+	
+	<div class="container-fluid col">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				<i class="fa fa-map-marker text-danger" aria-hidden="true"><span style="color:white;font-size:20px;">Reality<sub>Properties</sub></span></i><br><br>
+				<p class="text-muted">Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure.</p>
+				<i class="fa fa-map-marker text-danger" aria-hidden="true"><span class="text-muted">332 Living Place Augusta , US 23456</span></i>
+				<table>
+					<tr>
+						<td><img src="pic/download.png" height="20px" width="20px" class="rounded-circle ml-2"></td>
+						<td><img src="pic/twitter.png" height="20px" width="20px" class="rounded-circle ml-2"></td>
+						<td><img src="pic/linkdin.png" height="20px" width="20px" class="rounded-circle ml-2"></td>
+						<td><img src="pic/google.jpg" height="20px" width="20px" class="rounded-circle ml-2"></td>
+					</tr>
+				</table>
+				</div>
+				
+				<div class="col-md-2">
+					<table>
+						<tr><td><h6><span style="color:white;">Company</span></h6></tr>
+						<tr><br></td></tr>
+						<tr><td class="a2"><a href="#" class="colo">>Home</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>About</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Our Agents</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Contact Us</a></td></tr>
+					</table>
+				</div>
+				
+				<div class="col-md-2">
+					<table>
+						<tr><td><h6><span style="color:white;">Buy</span></h6></tr>
+						<tr><br></td></tr>
+						<tr><td class="a2"><a href="#" class="colo">>Home</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>About</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Our Agents</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Contact Us</a></td></tr>
+					</table>
+				</div>
+				
+				<div class="col-md-2">
+					<table>
+						<tr><td><h6><span style="color:white;">Sell</span></h6></tr>
+						<tr><br></td></tr>
+						<tr><td class="a2"><a href="#" class="colo">>Home</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>About</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Our Agents</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Contact Us</a></td></tr>
+					</table>
+				</div>
+				
+				<div class="col-md-2">
+					<table>
+						<tr><td><h6><span style="color:white;">Rent</span></h6></tr>
+						<tr><br></td></tr>
+						<tr><td class="a2"><a href="#" class="colo">>Home</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>About</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Our Agents</a></td></tr>
+						
+						<tr><td class="a2"><a href="#" class="colo">>Contact Us</a></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid colr">
+		<div class="row">
+			<div class="col-md-12 text-muted">
+				Copyright @ All Rights Reserved 2020 | Templete Designed and Developed By ABC
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
+
+</body>
+</html>
